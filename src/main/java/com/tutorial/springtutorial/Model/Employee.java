@@ -19,11 +19,15 @@ public class Employee implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
     private Long id;
+    private String doctor;
+    private String date;
+    private String time;
+    private String purpose;
     private String name;
-    private String email;
-    private String jobTitle;
+    private String surname;
+    private String birthday;
     private String phone;
-    private String imageUrl;
+    private String message;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
 
