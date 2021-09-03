@@ -19,7 +19,8 @@ public class Employee implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
     private Long id;
-    private String doctor;
+    private Long doctor_id;
+//    private String doctor;
     private String date;
     private String time;
     private String purpose;
