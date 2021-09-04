@@ -31,5 +31,9 @@ public class Employee implements Serializable {
     private String message;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
+//    @Column(nullable = false, updatable = false)
+//    @ManyToOne
+//    @JoinColumn(name = "doctor_id")
+//    private Doctor doctor;
 
 }

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -22,6 +23,7 @@ public class Doctor {
     private String doctorSurname;
     private String doctorSpecialization;
 //    private String doctorCode;
+
     @OneToMany (
 //            mappedBy = "doctor",
             cascade = CascadeType.ALL,
