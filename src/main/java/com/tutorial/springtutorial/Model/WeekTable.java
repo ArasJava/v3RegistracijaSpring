@@ -20,16 +20,15 @@ public class WeekTable implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
     private Long id;
+    private Long doctor_id;
     private Boolean monday;
     private Boolean tuesday;
     private Boolean wednesday;
     private Boolean thursday;
     private Boolean friday;
-    private Long timeStart;
-    private Long timeStop;
-    private Long weekOfYear;
-    private Long year;
-    private Long doctorID;
+    private String timeStart;
+//    @Column(nullable = false, updatable = false)
+//    private String weekTableCode;
 
-
+// PRIIMA TIK FALSE ARBA TRUE DIDZIOSIOMIS RAIDEMIS
 }

@@ -20,7 +20,6 @@ public class Employee implements Serializable {
     @Column(nullable = false, updatable = false)
     private Long id;
     private Long doctor_id;
-//    private String doctor;
     private String date;
     private String time;
     private String purpose;
@@ -31,9 +30,9 @@ public class Employee implements Serializable {
     private String message;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
-//    @Column(nullable = false, updatable = false)
+
 //    @ManyToOne
-//    @JoinColumn(name = "doctor_id")
+//    @JoinColumn(name = "id")
 //    private Doctor doctor;
 
 }

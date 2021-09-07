@@ -32,7 +32,13 @@ public class Doctor {
     @JoinColumn (name = "doctor_id")
     private List<Employee> employees;
 
-
+    @OneToMany (
+//            mappedBy = "doctor",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    @JoinColumn (name = "doctor_id")
+    private List<WeekTable> weekTables;
 
 
 //  Nebereikainga ------------------------------------
